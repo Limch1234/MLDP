@@ -13,7 +13,6 @@ st.markdown(
     .stApp {
     background-image: url("https://static1.straitstimes.com.sg/s3fs-public/articles/2017/01/24/41264232_-_23_01_2017_-_tmrain24.jpg?VersionId=kp3BoxC191W4_W6IpgOJOy3.74vR9ZG2");}
     background-size: cover;
-    background-position: center;
     background-attchment: fixed;
     }
     </style>
