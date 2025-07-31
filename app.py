@@ -22,12 +22,13 @@ st.markdown("Enter the weather data below to predict the average monthly rainfal
 
 
 temperature = st.number_input('Temperature (°C)', min_value=20.0, max_value=50.0, step=0.1)
-windspeed = st.slider('Windspeed (m/s)', 0.0, 10.0, 3.0, step=0.1)
-humidity = st.slider('Humidity (%)', 50, 100, 85, step=1)
 wind_direction = st.selectbox('Wind Direction', ['East', 'North', 'North-East', 'North-West', 'South-East',
                                                   'South-West', 'South', 'West'])
 month = st.selectbox('Month', ['January', 'February', 'March', 'April', 'May', 'June', 'July',
                           'August', 'September', 'October', 'November', 'December'])
+
+windspeed = st.slider('Windspeed (m/s)', 0.0, 10.0, 3.0, step=0.1)
+humidity = st.slider('Humidity (%)', 50, 100, 85, step=1)
 input_data = {
     'windspeed': windspeed,
     'temperature': temperature,
