@@ -22,7 +22,7 @@ st.markdown(
         background-color: rgba(0, 0, 0, 0.5); /* White overlay with transparency 
         z-index: 0; /* Ensure the overlay is behind the content */
     }
-    .stSuccess {
+    .stAlertSuccess {
         background-color: #0047AB; /* Dark blue */
         color: white;
         font-weight: bold;
