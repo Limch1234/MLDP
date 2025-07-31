@@ -4,9 +4,9 @@ import pandas as pd
 import joblib
 
 mdata = joblib.load('best_gradient_boosting_model.pkl')
-model = mdata['model']
-feature_columns = mdata['features']
-
+model = mdata['gbr_model']
+feature_columns = mdata['feature_columns']
+# Define the features used in the model
 all_features = ['windspeed', 'temperature', 'humidity', 'wind_direction_East', 'wind_direction_North',
                 'wind_direction_North-East', 'wind_direction_North-West', 'wind_direction_South-East',
                 'wind_direction_South-West', 'month_April', 'month_August', 'month_December',
