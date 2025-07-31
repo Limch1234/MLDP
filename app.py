@@ -16,7 +16,7 @@ all_features = ['windspeed', 'temperature', 'humidity', 'wind_direction_East', '
 
 # Initialize an empty DataFrame with the required columns
 
-st.title('Average Rainfall Prediction')
+st.title('Average Rainfall Prediction in Upp Changi Rd North')
 
 st.markdown("Enter the weather data below to predict the average rainfall:")
 
