@@ -16,13 +16,14 @@ all_features = ['windspeed', 'temperature', 'humidity', 'wind_direction_East', '
 
 # Initialize an empty DataFrame with the required columns
 
-st.title('Average Rainfall Prediction in Upp Changi Rd North')
+st.title('Average Monthly Rainfall Prediction in Upp Changi Rd North')
 
-st.markdown("Enter the weather data below to predict the average rainfall:")
+st.markdown("Enter the weather data below to predict the average monthly rainfall:")
 
-windspeed = st.number_input('Windspeed (m/s)', min_value=0.0, step=0.1)
+
 temperature = st.number_input('Temperature (°C)', min_value=20.0, max_value=50.0, step=0.1)
-humidity = st.number_input('Humidity (%)', min_value=0, max_value=100, step=1)
+windspeed = st.slider('Windspeed (m/s)', 0.0, 10.0, 3.0, step=0.1)
+humidity = st.slider('Humidity (%)', 50, 100, 85, step=1)
 wind_direction = st.selectbox('Wind Direction', ['East', 'North', 'North-East', 'North-West', 'South-East',
                                                   'South-West', 'South', 'West'])
 month = st.selectbox('Month', ['January', 'February', 'March', 'April', 'May', 'June', 'July',
