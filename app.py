@@ -10,6 +10,17 @@ st.markdown(
         background-image: url("https://static1.straitstimes.com.sg/s3fs-public/articles/2017/01/24/41264232_-_23_01_2017_-_tmrain24.jpg?VersionId=kp3BoxC191W4_W6IpgOJOy3.74vR9ZG2");
         background-size: cover;
         background-attachment: fixed;
+
+    }
+    .stApp::before {
+        content: "";
+        position: fixed
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* White overlay with transparency 
+        z-index: 0; /* Ensure the overlay is behind the content */
     }
     </style>
     """,
