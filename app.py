@@ -3,7 +3,9 @@ import numpy as np
 import pandas as pd
 import joblib
 
-model = joblib.load('best_gradient_boosting_model.pkl')
+mdata = joblib.load('best_gradient_boosting_model.pkl')
+model = mdata['model']
+feature_columns = mdata['features']
 
 all_features = ['windspeed', 'temperature', 'humidity', 'wind_direction_East', 'wind_direction_North',
                 'wind_direction_North-East', 'wind_direction_North-West', 'wind_direction_South-East',
@@ -40,6 +42,7 @@ for month_name in ['January', 'February', 'March', 'April', 'May', 'June', 'July
 
 input_df = pd.DataFrame([input_data], columns=all_features)
 
+input_df = input_df.reindex(columns= feature_columns, fill_value=0)
 if st.button('Predict'):
     y_pred_log = model.predict(input_df)[0]
     y_pred = np.exp(y_pred_log)  # Convert log prediction back to original scale
