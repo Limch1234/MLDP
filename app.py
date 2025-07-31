@@ -21,7 +21,7 @@ st.title('Average Rainfall Prediction')
 st.markdown("Enter the weather data below to predict the average rainfall:")
 
 windspeed = st.number_input('Windspeed (m/s)', min_value=0.0, step=0.1)
-temperature = st.number_input('Temperature (°C)', min_value=-30.0, max_value=50.0, step=0.1)
+temperature = st.number_input('Temperature (°C)', min_value=20.0, max_value=50.0, step=0.1)
 humidity = st.number_input('Humidity (%)', min_value=0, max_value=100, step=1)
 wind_direction = st.selectbox('Wind Direction', ['East', 'North', 'North-East', 'North-West', 'South-East',
                                                   'South-West', 'South', 'West'])
