@@ -35,7 +35,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 mdata = joblib.load('best_gradient_boosting_model.pkl')
-model = mdata['gbr_model']
+model = mdata['best_gbr']
 feature_columns = mdata['feature_columns']
 # Define the features used in the model
 all_features = ['windspeed', 'temperature', 'humidity', 'wind_direction_East', 'wind_direction_North',
