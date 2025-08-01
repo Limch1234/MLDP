@@ -77,4 +77,15 @@ input_df = input_df.reindex(columns= feature_columns, fill_value=0) # Ensure the
 if st.button('Predict'):
     y_pred_log = model.predict(input_df)[0] # Predict the log of the average rainfall
     y_pred = np.exp(y_pred_log)  # Convert log prediction back to original scale
-    st.success(f'The predicted average rainfall is: {y_pred:.2f} mm') # Display the predicted average rainfall
+    if y_pred < 1:
+        rain_class = "Dry"
+    elif y_pred < 3:
+        rain_class = "Light Rain"
+    elif y_pred < 7:
+        rain_class = "Moderate Rain"
+    else:
+        rain_class = "Heavy Rain"
+        st.warning("Heavy rainfall predicted! Please take necessary precautions.")
+
+    st.success(f'The predicted average rainfall is: {y_pred:.2f} mm'
+               f' ({rain_class})') # Display the predicted average rainfall
