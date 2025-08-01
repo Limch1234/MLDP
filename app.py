@@ -112,7 +112,7 @@ if st.button('Predict'):
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* White overlay with transparency */
+            background-color: rgba(0, 0, 0, 0.8); /* White overlay with transparency */
             z-index: -1; /* Ensure the overlay is behind the content */
         }}
     </style>
