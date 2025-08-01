@@ -53,6 +53,8 @@ st.markdown("Enter the weather data below to predict the average monthly rainfal
 
 
 temperature = st.number_input('Temperature (°C)', min_value=20.0, max_value=50.0, step=0.1)
+if temperature > 35:
+    st.warning("⚠️ This temperature is unusually high for Singapore!")
 wind_direction = st.selectbox('Wind Direction', ['East', 'North', 'North-East', 'North-West', 'South-East',
                                                   'South-West', 'South', 'West'])
 month = st.selectbox('Month', ['January', 'February', 'March', 'April', 'May', 'June', 'July',
