@@ -31,7 +31,7 @@ model = mdata['gbr_model'] # Load the model
 feature_columns = mdata['feature_columns'] # Load the feature columns
 # Define the features used in the model
 
-backgrounds = {
+url_backgrounds = {
     'Dry': 'https://thumbs.dreamstime.com/b/singapore-september-close-up-marina-bay-sands-wonderful-cityscape-sunny-day-shot-three-towers-ressort-against-135571833.jpg',
     'Light Rain': 'https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1910724454.jpg?c=original',
     'Moderate Rain': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ddc54f5-5910-407a-8384-a82c5ef44c24/dcv1iia-008c77fc-837e-488b-8c5d-165013a2a95d.jpg/v1/fill/w_1280,h_854,q_75,strp/light_rain_heavy__traffic_singapore_sunset_by_capturing_the_light_dcv1iia-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvMGRkYzU0ZjUtNTkxMC00MDdhLTgzODQtYTgyYzVlZjQ0YzI0XC9kY3YxaWlhLTAwOGM3N2ZjLTgzN2UtNDg4Yi04YzVkLTE2NTAxM2EyYTk1ZC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hb4uom4x_5FZtami28_lJREWjIhzatms_kvC_4vkoqw',
